@@ -1,4 +1,4 @@
-Copyright (c) 2022, Nerijus Jasinskas
+Copyright (c) 2026 Hasher Amin
 
 All rights reserved.
 
