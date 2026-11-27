@@ -1,0 +1,26 @@
+name: ContribArt
+description: Generate customizable SVG artwork from your GitHub contribution graph.
+author: Hasher Amin
+inputs:
+  user_name:
+    description: GitHub username
+    default: hasheramin5-cyber
+    required: false
+  text:
+    description: Text on contribution graph (up to 8 characters)
+    default: Hasher
+    required: true
+  svg_file_name:
+    description: 'SVG file name (optional), default: gitartwork.svg'
+    default: gitartwork.svg
+    required: false
+  colors:
+    description: 'Comma-separated list of 5 HEX colors for contribution levels 0-4 (optional)'
+    default: ''
+    required: false
+runs:
+  using: node20
+  main: dist/index.js
+branding:
+  icon: aperture
+  color: blue
